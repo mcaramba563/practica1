@@ -33,6 +33,7 @@ To create a model with specific hidden layers:
     ```bash
     make_custom_model 'array of layers'
     ```
+
 Example:
     ```bash
     make_custom_model 400 256 128
@@ -41,7 +42,12 @@ Example:
 2. Train on Random Images
 To train the model on N random images for epochs with a specific learning rate
     ```bash
-    python -c "from app import do_train_on_random_images; do_train_on_random_images(['train_on_random_images', '20000', '2', '0.01'])"
+    train_on_random_images number_of_images number_of_epochs lr
+    ```
+
+Example:
+    ```bash
+    train_on_random_images 20000 2 0.01
     ```
 
 3. Predict an Image
