@@ -28,7 +28,7 @@ This repository contains a neural network application implementing a multilayer 
    ```bash
    python main.py
    ```
-3. Create a Custom Model
+2. Create a Custom Model
 To create a model with specific hidden layers:
     ```bash
     make_custom_model 'array of layers'
@@ -39,7 +39,7 @@ Example:
     make_custom_model 400 256 128
     ```
 
-2. Train on Random Images
+3. Train on Random Images
 To train the model on N random images for epochs with a specific learning rate
     ```bash
     train_on_random_images number_of_images number_of_epochs lr
@@ -50,20 +50,35 @@ Example:
     train_on_random_images 20000 2 0.01
     ```
 
-3. Predict an Image
+4. Predict an Image
 To make a prediction for a specific image
     ```bash
-    python -c "from app import do_predict; do_predict(['predict', 'images/mnist_png/test/0/10.png'])"
+    predict path_to_image
     ```
 
-4. Save the Model
+Example:
+    ```bash
+    predict images/mnist_png/test/0/10.png
+    ```
+
+5. Save the Model
 To save the current model:
     ```bash
-    python -c "from app import do_save_model; do_save_model(['save_model', 'models/my_model.npy'])"
+    save_model path_to_folder
     ```
 
-5. Load a Model
+Example:
+    ```bash
+    save_model models/my_model.npy
+    ```
+
+6. Load a Model
 To load a previously saved model:
     ```bash
-    python -c "from app import do_load_custom_model; do_load_custom_model(['load_custom_model', 'models/my_model.npy'])"
+    load_custom_model path_to_model
+    ```
+
+Example:
+    ```bash
+    load_custom_model models/my_model.npy
     ```
