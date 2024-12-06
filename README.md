@@ -31,11 +31,11 @@ This repository contains a neural network application implementing a multilayer 
 3. Create a Custom Model
 To create a model with specific hidden layers:
     ```bash
-    make_custom_model 'array of layers'"
+    make_custom_model 'array of layers'
     ```
 Example:
     ```bash
-    make_custom_model 400 256 128"
+    make_custom_model 400 256 128
     ```
 
 2. Train on Random Images
