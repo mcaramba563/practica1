@@ -24,10 +24,18 @@ This repository contains a neural network application implementing a multilayer 
     ```
 
 ## Usage
-1. Create a Custom Model
+1. To start app
+   ```bash
+   python main.py
+   ```
+3. Create a Custom Model
 To create a model with specific hidden layers:
     ```bash
-    python -c "from app import do_make_custom_model; do_make_custom_model(['make_custom_model', '400', '256', '128'])"
+    make_custom_model 'array of layers'"
+    ```
+Example:
+    ```bash
+    make_custom_model 400 256 128"
     ```
 
 2. Train on Random Images
