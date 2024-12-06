@@ -18,8 +18,7 @@ This repository contains a neural network application implementing a multilayer 
    cd final_project_git
    ```
 
-2. 
-Install dependencies:
+2. Install dependencies:
     ```bash
     pip install -r requirements.txt
     ```
